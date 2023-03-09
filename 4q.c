@@ -9,8 +9,8 @@ int main (){
     distCam = DIST_INI + (VEL_CAM * 0.016666666) * temp; // Achando a distância que o carro se cruza com o caminhão e converte km/h para km/m na velocidade constante
 
     if (distCar == distCam){ // A distância deve ser igual, pois é o ponto em que se encontram
-        distCam = distCam + (TEMP_PED * PED); // Devido aos dois pedágios, o caminh
-        if (distCam > distCar){ // Verifiando qual está mais próximo
+        distCam = distCam + (TEMP_PED * PED); // Devido aos dois pedágios, o caminhão sofre alteração
+        if (distCam > distCar){ // Verificando qual está mais próximo
             printf("O carro está mais próximo da cidade de Ribeirão Preto\n");
         }
         else {
